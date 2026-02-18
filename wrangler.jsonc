@@ -1,0 +1,33 @@
+{
+	"compatibility_date": "2025-10-08",
+	"main": "src/index.ts",
+	"name": "doc-svc",
+	"upload_source_maps": true,
+	"workers_dev": true,
+	"compatibility_flags": [
+		"nodejs_als",
+		// "nodejs_compat"
+	],
+	"version_metadata": {
+		"binding": "CF_VERSION_METADATA",
+	},
+	"observability": {
+		"enabled": true,
+	},
+	"vars": {
+		"ENVIRONMENT": "development",
+	},
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "doc-dev",
+			"database_id": "9b9661d2-0d8a-499e-bc34-c18598b864e1",
+		},
+	],
+	"kv_namespaces": [
+		{
+			"binding": "TASKS_KV",
+			"id": "d8a16e05348d47ba9edcf1d5bdf12ca3",
+		},
+	],
+}
